@@ -7,7 +7,9 @@ class App extends Component {
   findMultiples(divisor, bottom, top) {
     let multiples = [];
     let start = this.findStart(divisor,bottom,top);
-
+    if(start === 0){
+      return multiples; // For occurrences when a lowest multiple does not exist in the range
+    }
     while(start < top) {
       multiples.push(start);
       start = start + divisor;
@@ -28,7 +30,7 @@ class App extends Component {
   }
 
   render() {
-    let converter = require('number-to-words'); // number to words is a library used to convert a number into english words
+    let converter = require('number-to-words'); // number-to-words is a library used to convert a number into english words
     let numberList = this.findMultiples(3,5,100); // finds <multiples of 3> between <5 and 100>
     // the list of applicable numbers is reversed and converted to strings during the render operation
     return (
