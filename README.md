@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This was a simple test to show all multiples of 3 between 5 and 100 in reverse order (high numbers to low numbers) and displayed in english text. This entire solution is inside of App.js
+
+Project was bootstrapped with [Create React App]
 
 ## Available Scripts
 
